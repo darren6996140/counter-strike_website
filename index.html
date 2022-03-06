@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Counter-Strike.</title>
+<meta charset="UTF-8">
+<!--title logo-->
+<link rel = "icon" href = "https://seeklogo.com/images/C/csgo-logo-CAA0A4D48A-seeklogo.com.png" type = "image/x-icon">
+
+<style>
+
+/* Constant tags */
+
+/* Style navbar */
+.navbar {
+  width: 100%;
+  overflow: auto;
+}
+
+/* Style links of navbar */
+.navbar a {
+  float: left;
+  padding: 0px;
+  color: white;
+  text-decoration: none;
+  font-size: 200%;
+  width: 16.666666666666666666666666666666666666666666666667%; 
+  padding-bottom: 1%;
+  padding-top: 1%;
+  text-align: center;
+  font-family: 'glacial indifference';
+  border-radius: 25px;
+}
+
+/* Style navbar when hovering*/
+.navbar a:hover {
+    background-color: rgba(0, 38, 255, 0.7);
+	color: white;
+}
+
+/* Style navbar when at active page*/
+.navbar a.active {
+  background-color: rgba(220, 220, 220, 0.8);
+  color: rgba(0, 38, 255, 0.7);
+}
+
+/* Ensures navbar does not collapse*/
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Background image*/
+body {
+  background-image: url('https://img-cdn.hltv.org/gallerypicture/QxsjAl_tNUOWpSI-5OOE_F.jpg?ixlib=java-2.1.0&s=847652d2103e15313ed69d279658c7e2');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Style header*/
+#header {
+	padding-top: 2%;
+    padding-bottom: 2%;
+	text-align: center;
+	color: white;
+	font-size: 300%;
+    font-family: 'glacial indifference';
+    font-weight: bold;
+}
+
+/* Style main content*/
+#main{
+    color:black;
+    background-color: rgba(220, 220, 220, 0.8);
+    font-family: 'Segoe UI';
+    text-align: center;
+    font-size: 90%;
+    border-radius: 25px;
+}
+
+/* unused background/div blur properties
+#main{
+  color:white;
+  background-color: #ffffff10;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  font-family: 'Segoe UI';
+  text-align: center;
+  font-size: 80%;
+  padding-bottom: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+}*/
+
+/*Style footer*/
+#footer{
+	text-align: center;
+	justify-content: center;
+	background: rgba(220, 220, 220, 0.8);
+	padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 25px;
+}
+
+/* Style <h1> and <h2> fonts*/
+h1, h2{
+    color: black;
+    font-family: 'glacial indifference';
+}
+
+/* Style <h1> size*/
+h1{
+    font-size: 170%;
+}
+
+/* Style <h2> size*/
+h2{
+    font-size: 120%;
+}
+
+/* Style images with id img*/
+#img{
+    padding-top: 3%;
+}
+
+/* Style tags <p> and <a>*/
+p, a{
+    text-align: center;
+    font-size: 200%;
+}
+
+/* Style links*/
+a{
+    color: rgba(0, 38, 255, 0.7);
+}
+
+/* Style descriptons*/
+u{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 115%;
+}
+
+/* Style final description*/
+#foot{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+</style>
+</head>
+<body>
+
+    <h1 id=header>
+        Counter-Strike.
+    </h1>
+
+    <div class="navbar">
+        <a  class="active" href="index.html">Main Menu</a>
+        <a  href="page1.html">Gameplay Part 1</a>
+        <a  href="page2.html">Gameplay Part 2</a>
+        <a  href="page3.html">History</a>
+        <a  href="page4.html">Esports Scene</a>
+        <a  href="page5.html">Esports History</a>
+    </div>
+
+    <br><br><center><iframe width="1001" height="563" src="https://www.youtube.com/embed/dWuKCm7KnNw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+    <u><center>A video showcasing the history of the game.</center></u><br><br>
+
+    <div id="main">
+        <img src="img/blast.webp" width="800px" height="450px" id="img" alt="A Counter-Strike Tournament Hosted by Blast"><br>
+        <u style="color: black;">An arena holding a Counter-Strike tournament.</u>
+        <p><b>Counter-Strike,</b></p>
+        <p>A game that brings people together, no matter the nationality or background that you come from.</p>
+        <p>A game that transcends cultures and age barriers.</p>
+        <p>A game that revolutionizes gaming as a whole.</p>
+        <p>This website is dedicated to commemorate what it has achieved and to remember it's contributions.</p>
+        <a href="page1.html">Click here to start learning.</a>
+        <br><br><br>
+    </div><br><br>
+    
+    <div id="footer">
+    <h1>Created by Group 2:</h1>
+        <h2>Liau Kai Ze</h2>
+        <h2>Lai Cheng Yung</h2>
+        <h2>Tan Jing Yan</h2>
+        <h2>Chong Zhi Xuan</h2>
+        <h2>Wafa Sidig Mohamed Sidig</h2>
+    </div>
+
+    <br>
+    <u id="foot"><center>Background Image: A wise shot of the LanXess Arena, Cologne, hosting a tournament called ESL One Cologne 2019, sometimes referred to as "The Cathedral of Counter-Strike".</center></u>
+    <br>
+
+</body>
+</html>
+
+<!--
+ At least 6 pages [siap]
+ Page title [siap]
+ Use different Heading size [siap]
+ Background image [siap]
+ Hyperlink to other pages and other website (linking correctly) [siap]
+ At least 4 images with different alignment setup (center, left, right) using difference sources (from file/from direct link) [siap]
+ Embed YouTube video [siap]
+ Different font formatting [siap]
+ At least 2 pages with a 2-column content [siap]
+ At least 2 tables with different design style [siap]
+ 2-level list using customized bullet image [siap]
+-->

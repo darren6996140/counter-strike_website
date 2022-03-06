@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Counter-Strike Gameplay</title>
+<meta charset="UTF-8">
+<link rel = "icon" href = "https://seeklogo.com/images/C/csgo-logo-CAA0A4D48A-seeklogo.com.png" type = "image/x-icon">
+
+<style>
+
+/* Constant tags */
+
+.navbar {
+  width: 100%;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 0px;
+  color: white;
+  text-decoration: none;
+  font-size: 200%;
+  width: 16.666666666666666666666666666666666666666666666667%; 
+  padding-bottom: 1%;
+  padding-top: 1%;
+  text-align: center;
+  font-family: 'glacial indifference';
+  border-radius: 25px;
+}
+
+.navbar a:hover {
+  background-color: rgba(0, 38, 255, 0.7);
+	color: white;
+}
+
+.navbar a.active {
+  background-color: rgba(220, 220, 220, 0.8);
+  color: rgba(0, 38, 255, 0.7);
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+body {
+  background-image: url('https://img-cdn.hltv.org/gallerypicture/QxsjAl_tNUOWpSI-5OOE_F.jpg?ixlib=java-2.1.0&s=847652d2103e15313ed69d279658c7e2');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#header 
+{
+	padding-top: 2%;
+  padding-bottom: 2%;
+	text-align: center;
+	color: white;
+	font-size: 300%;
+  font-family: 'glacial indifference';
+  font-weight: bold;
+}
+
+#main{
+  color:black;
+  background-color: rgba(220, 220, 220, 0.8);
+  font-family: 'Segoe UI';
+  text-align: center;
+  font-size: 80%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0.5px;
+  border-radius: 25px;
+}
+
+#footer{
+	text-align: center;
+	justify-content: center;
+	background: rgba(220, 220, 220, 0.8);
+	padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 25px;
+}
+
+h1, h2{
+  color: black;
+  font-family: 'glacial indifference';
+}
+
+h1{
+  font-size: 170%;
+}
+
+h2{
+  font-size: 120%;
+}
+
+#img{
+  padding-top: 3%;
+}
+
+p, a{
+  text-align: left;
+  font-size: 200%;
+}
+
+u{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 115%;
+}
+
+#base{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+#title{
+  text-align: left;
+  font-weight: bold;
+  font-size: 260%;
+  text-decoration: underline black ;
+}
+
+#subtitle{
+  text-align: left;
+  font-weight: bold;
+  font-size: 200%;
+  text-decoration: underline black ;
+  text-decoration-style: dotted;
+}
+
+/* Variable tags */
+
+/* Style weapons table*/
+#table1{
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: rgba(220, 220, 220, 0.8);
+}
+
+#td1,#tr1{
+  border: 2px solid black;
+  border-collapse: collapse;
+  font-family: 'glacial indifference';
+  font-size: 130%;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style buy terms table*/
+#table2{
+  text-align: center;
+  font-family: 'glacial indifference';
+}
+
+#td2{
+  border: 2px solid black;
+  border-collapse: collapse;
+  font-family: 'glacial indifference';
+  font-size: 130%;
+  text-align: left;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(220, 220, 220, 0.8);
+}
+
+/* Style ordered list*/
+ol{
+  color:black;
+  font-family: 'Segoe UI';
+  font-size: 230%;
+}
+
+/* Style grenade images*/
+#row {
+  display: flex;
+}
+
+/* Style grenade images such that 3 appears in 1 row*/
+#column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+</style>
+</head>
+<body>
+
+  <h1 id=header>
+    Counter-Strike.
+  </h1>
+
+  <div class="navbar">
+    <a  href="index.html">Main Menu</a>
+    <a  class="active" href="page1.html">Gameplay Part 1</a>
+    <a  href="page2.html">Gameplay Part 2</a>
+    <a  href="page3.html">History</a>
+    <a  href="page4.html">Esports Scene</a>
+    <a  href="page5.html">Esports History</a>
+  </div>
+
+  <center><img src="img/menu.png" width="1001px" height="563px" id="img" alt="Main Menu of the game"></center>
+  <u><center>Main Menu of the game, featuing an event currently ongoing called Operation Riptide.</center></u>
+  <br><br>
+
+  <div id="main">
+    <h1 id="title">Introduction</h1>
+    <p>Counter-Strike is a multiplayer first-person shooter developed by Valve and Hidden Path Entertainment.</p>
+    <p>You play as 2 teams, which is Counter Terrorists(CTs) and Terrorists(Ts). For defuse mode, the Ts are tasked to plant the bomb at one of the 2 bombsites, while the CTs are tasked to defuse it. While for hostage mode, the CTs are responsible for saving hostages while the Ts prevent them to do so.</p>
+    <p>The Ts have 1 minute and 55 seconds to plant the bomb, while the CTs prevent that from happening. When the time is up, the CTs win by default. After the bomb has been planted, the CTs have 40 seconds to defuse it, requiring them to "retake" a bombsite. When the timer hits 0, the bomb blows up, taking anyone within its blast radius down, and the Ts automatically win.</p>
+    <p>A classic match of Counter-Strike lasts for 30 rounds, where reaching Round 15 is half time and the teams switch. Whichever team reaches 16 round wins has won the whole match while if both teams reach 15 rounds, it is a tie.</p>
+    <p>The first round of the game is called the pistol round as both teams have no money to buy anything except for pistols or other equipments to help them. Usually those who in the pistol round will gain an economic advantage and can win the 2nd and 3rd round as well.</p>
+    <p>The basics of this game is easy to understand but mastering the game requires great mechanical skill and expertise as the skill ceiling is quite high. As a team based game, team play and teamwork must be in sync in order to master the game.</p>
+    <p>The latest installment of the game is Counter-Strike: Global Offensive and it is what we will be discussing in this website.</p>
+    <h1 id="title">Weapons</h1>
+    <p>The game provides a variety of weapons that is modelled after real life weapons, ranging from pistols to rifles and shotguns.</p>
+  </div>
+
+  <br><br><center><table id="table1">
+
+    <tr id="tr1">
+      <td id="td1"><b>Weapon Type</b></td>
+      <td id="td1"><b>Weapons</b></td>
+      <td id="td1"><b>Price</b></td>
+    </tr>
+
+    <tr id="tr1">
+      <td id="td1"><b>Pistols</b></td>
+      <td id="td1" style="text-align: left;">
+        USP-S/P2000/Glock-18 <br>
+        P250 <br>
+        Dual Berettas <br>
+        Five-Seven/Tec-9/CZ-75 <br>
+        Desert Eagle/R8 Revolver <br>
+      </td>
+      <td id="td1">
+        Free <br>
+        300$ <br>
+        400$ <br>
+        500$ <br>
+        700$/600$ <br>
+      </td>
+    </tr>
+    
+    <tr id="tr1">
+      <td id="td1"><b>Sub-Machine Guns <br>(SMGs)</b></td>
+      <td id="td1" style="text-align: left;">
+        MAC-10/MP9 <br>
+        MP5-SD/MP7 <br>
+        PP-Bizon <br>
+        UMP-45 <br>
+        P90 <br>
+      </td>
+      <td id="td1">
+        1050$/1250$ <br>
+        1500$ <br>
+        1400$ <br>
+        1200$ <br>
+        2300$ <br>
+      </td>
+    </tr>
+    
+    <tr id="tr1">
+      <td id="td1"><b>Heavy</b></td>
+      <td id="td1" style="text-align: left;">
+        Nova <br>
+        XM1014 <br>
+        MAG-7/Sawed-Off <br>
+        Negev <br>
+        M249 <br>
+      </td>
+      <td id="td1">
+        1050$ <br>
+        2000$ <br>
+        1300$ <br>
+        1700$ <br>
+        5200$ <br>
+      </td>
+    </tr>
+
+    <tr id="tr1">
+      <td id="td1"><b>Rifles</b></td>
+      <td id="td1" style="text-align: left;">
+        FAMAS/Galil AR <br>
+        M4A1-S/M4A4/AK47 <br>
+        SSG 08 <br>
+        SG 553/AUG <br>
+        AWP <br>
+        SCAR-20/G3SG1 <br>
+      </td>
+      <td id="td1">
+        1800$/2050$ <br>
+        2900$/3100$/2700$ <br>
+        1700$ <br>
+        3300$/3000$ <br>
+        4750$ <br>
+        5000$ <br>
+      </td>
+    </tr>
+
+  </table></center>
+
+  <u><center>A table showcasing all the different weapons avaliable in the game, along with the respective prices.</center></u>
+  <br><br>
+
+  <div id="main">
+    <p>The rifles are generally more preferred due to their versatility in many different situations but it must be bought with caution as to not wreck one's economy.</p>
+    <p>However, SMGs are also used often as well but it is only effective in close ranges. The game awards the player after a kill, for rifles, it is usually 300$ with the exception of the AWP at 100$. As for SMGs, it is usually 600$ except the P90 which awards 300$. Because of that, people use SMGs to build up their money while being effective at engagements as well.</p>
+    <p>Skilled individuals may not consider the heavys as their daily driver due to their poor versatility at longer ranges and the slow movement speed. So the game rewards the ones who uses the shotguns well, with a 900$ kill reward. So players need to analyse the risk vs. reward when using the shotguns.</p>
+    <p>Pistols are generally used in half buys or ecos due to their low price and great impact in skilled hands.</p>
+    <p>Some weapons can only be bought in the CT or T side and they usually differ in price. The weapons on their counterparts can be seen at the table above, denoted with a slash.</p>
+    <h1 id="title">Equipments</h1>
+    <p>This game also includes other equipments that help in gameplay.</p>
+    <p>It can be categorized in 3 categories:</p>
+    <ol><b>
+      <li>Utility</li>
+      <li>Armor</li>
+      <li>Others</li>
+    </ol></b>
+  </div>
+
+  <div id="row">
+    <div id="column">
+      <img src="https://static.wikia.nocookie.net/cswikia/images/c/ce/Hegrenadehud_csgo.png/" alt="HE Grenade" style="width:100%" align="left">
+      <u><center>HE Grenade</center></u>
+    </div>
+    <div id="column">
+      <img src="https://static.wikia.nocookie.net/cswikia/images/5/56/Molotovhud.png/" alt="Molotov" style="width:100%" align="middle">
+      <u><center>Molotov</center></u>
+    </div>
+    <div id="column">
+      <img src="https://static.wikia.nocookie.net/cswikia/images/f/f3/Flashbanghud_csgo.png/" alt="Flashbang" style="width:100%" align="right">
+      <u><center>Flashbang</center></u>
+    </div>
+  </div>
+
+  <div id="row">
+    <div id="column">
+      <img src="https://static.wikia.nocookie.net/cswikia/images/7/76/Smokegrenadehud_csgo.png/" alt="Smoke Grenade" style="width:100%" align="left">
+      <u><center>Smoke Grenade</center></u>
+    </div>
+    <div id="column">
+      <img src="https://static.wikia.nocookie.net/cswikia/images/1/1b/Incgrenadehud_csgo.png/" alt="Incendiary Grenade" style="width:100%"  align="middle"> 
+      <u><center>Incendiary Grenade</center></u>
+    </div>
+    <div id="column">
+      <img src="https://static.wikia.nocookie.net/cswikia/images/2/23/Decoyhud_csgo.png/" alt="Decoy Grenade" style="width:100%" align="right">
+      <u><center>Decoy Grenade</center></u>
+    </div>
+  </div>
+  
+  <br>
+  <u><center>A variety of grenades to buy from and use.</center></u>
+  <br><br>
+
+  <div id="main">
+    <h1 id="subtitle">1. Utility/Grenades</h1>
+    <p>The HE Grenade costs 300$ and it can be used to throw it at enemies to damage them. The damage is relative to whether the enemy is wearing armor or not. In other words, when you have armor equipped it deals less damage and vice versa.</p>
+    <p>The Molotov and the Incendiary Grenade costs 400$ and 600$ respectively and is used to lay fire on the floor, damaging anyone that walks above it. The difference between the both is that the Molotov can only be bought by the T side and the Incendiary can only be bought by the CT side.</p>
+    <p>The flashbang is worth 200$ and is the only grenade where you can buy 2 of it at once. It blinds people, turning their screen fully white and deafens them for a short while. This leaves people affected by it to be vulnerable for a few seconds of its effective duration. To avoid being blind, players must turn away from the flashbang.</p>
+    <p>Smoke grenades are useful to isolate angles and block off vision. It can be useful to limit movement into a bombsite and it can extinguish fire from the Molotovs and Incendiary Grenades.</p>
+    <p>Decoys are grenades that mimics the sound of the gun you are currently equipped with and it. It looks like a flashbang, so people might turn away from it to avoid being blind, even though it does not blind people. At a price of 50$, people will not buy it because it provides no tactical advantage whatsoever.</p>
+    <p>You can only hold 4 grenades of any type so great considerations must be taken by the player to equip which utility to get the job done.</p>
+  </div>
+  
+  <br><br><center><iframe width="1001px" height="563px" src="https://www.youtube.com/embed/CjctGZy2a-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+  <u><center>A video giving a tutorial on how to use grenades.</center></u>
+  <br><br>
+
+  <div id="main">
+  <h1 id="subtitle">2. Armor</h1>
+    <p>There is 2 types of armor one can buy. Firstly is the kevlar, costing 650$ which protects the whole body except the head and the legs. With the head exposed, gun which can kill in a headshot are extremely deadly as 1 bullet is all it takes to kill you. It also avoids a phenomenon called "Aim Punch" where bullets hitting you can cause your screen to shake, mimicking flinching and can cause inconvenience to the player. That is why people usually buy kevlar to avoid this phenomenon as well as reducing the damage taken.</p>
+    <p>Kevlar paired with a helmet provides full coverage of the body except the legs. It gives all the benefits mentioned above and it also protects the head as well. It costs 1000$, this price ensures that you cannot buy it during a pistol round, leaving the head vulnerable.</p>
+    <p>However, rifles like the AK47, SG553, SSG 08 and the AWP can kill you with just 1 headshot, regardless of having a helmet or not. Because of that, players might omit from buying the helmet to save 350$, which they can use to buy other equipments.</p>
+    <h1 id="subtitle">3. Others</h1>
+    <p>Other equipment that players can use is the taser, named as Zeus x23, the Defuse Kit, the bomb and the knife.</p>
+    <p>The taser is used in extremely close quarters and can take down someone in 1 shot, regardless of armor equipped or the lack thereof. With it just costing 200$, players might be tempted to try it just to have a cheeky kill.</p>
+    <p>The defuse kit is to cut the time taken to defuse the bomb in half, reducing it from 10 seconds to 5 seconds. In a game as fast paced and nail-biting as Counter-Strike, not having a kit and to lose to the bomb going off, just because a kit was not bought, is demoralizing and humiliating. At just 400$, teams are advised to have 2-3 kits in their team to avoid this situation.</p>
+    <p>The bomb is the core of the defuse game mode, the main objective of the Terrorists. The bomb is randomly given to a player in the T side and their objective is to plant that bomb.</p>
+    <p>Knifes are in every players inventory, it can be used in extremely close ranges and mainly used to run faster. The meme about you run faster with your knife out originates from this game.</p>
+  <h1 id="title">Economy</h1>
+    <p>What this game differs from other first-person shooters is that it has an economy system. Teams are responsible to manage their economy to avoid having little to no money to buy equipment.</p>
+    <p>When a team wins they get a set amount of money which ranges from 3250$ to 3500$ but if a team loses they get lesser money than the winning team, usually starting from 1400$.</p>
+    <p>When a team loses their loss bonus goes up by 800$ such that the 1st round loss is 1400$, the second round loss is 1900$ and so on until it reaches the limit of 3400$. So teams are incentivised when they lose more.</p>
+  </div>
+
+  <center>
+  <table id="table2"><br><br>
+
+    <tr>
+      <td id="td2"><b>Eco</b></td>
+      <td id="td2">is a term used to describe when a team is not buying any equipment to build their economy.</td>
+    </tr>
+
+    <tr>
+      <td id="td2"><b>Half Buy</b></td>
+      <td id="td2">is a term used to describe when a team is buying equipment to a certain level to ensure a full buy in the next round.</td>
+    </tr>
+
+    <tr>
+      <td id="td2"><b>Full Buy</b></td>
+      <td id="td2">is a term used to describe when a team is buying the best equipment to ensure their ability to win the round.</td>
+    </tr>
+
+    <tr>
+      <td id="td2"><b>Force Buy</b></td>
+      <td id="td2">is a term used to describe when a team is using all of its money to buy but the equipment is not as strong as compared to a full buy.</td>
+    </tr>
+
+  </table>
+  </center>
+
+  <u><center>A guide of the common terms used to refer to a certain buy.</center></u>
+
+  <br><br>
+  <div id="main"><br>
+    <p style="text-align: center;">This is just touching the surface of what Counter-Strike is. <br>
+      <a style="font-size: 120%;" href="page2.html">Click here</a>
+      to learn more about Counter-Strike's gameplay.
+    </p>
+  </div>
+
+  <br><br>
+  <div id="footer">
+    <h1>Created by Group 2:</h1>
+    <h2>Liau Kai Ze</h2>
+    <h2>Lai Cheng Yung</h2>
+    <h2>Tan Jing Yan</h2>
+    <h2>Chong Zhi Xuan</h2>
+    <h2>Wafa Sidig Mohamed Sidig</h2>
+  </div>
+
+  <br>
+  <u id="base"><center>Background Image: A wise shot of the LanXess Arena, Cologne, hosting a tournament called ESL One Cologne 2019, sometimes referred to as "The Cathedral of Counter-Strike".</center></u>
+  <br>
+
+</body>
+</html>

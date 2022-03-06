@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Esports History</title>
+<meta charset="UTF-8">
+<link rel = "icon" href = "https://seeklogo.com/images/C/csgo-logo-CAA0A4D48A-seeklogo.com.png" type = "image/x-icon">
+
+<style>
+
+/* Constant tags */
+
+.navbar {
+  width: 100%;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 0px;
+  color: white;
+  text-decoration: none;
+  font-size: 200%;
+  width: 16.666666666666666666666666666666666666666666666667%; 
+  padding-bottom: 1%;
+  padding-top: 1%;
+  text-align: center;
+  font-family: 'glacial indifference';
+  border-radius: 25px;
+}
+
+.navbar a:hover {
+  background-color: rgba(0, 38, 255, 0.7);
+	color: white;
+}
+
+.navbar a.active {
+  background-color: rgba(220, 220, 220, 0.8);
+  color: rgba(0, 38, 255, 0.7);
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+body {
+  background-image: url('https://img-cdn.hltv.org/gallerypicture/QxsjAl_tNUOWpSI-5OOE_F.jpg?ixlib=java-2.1.0&s=847652d2103e15313ed69d279658c7e2');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#header 
+{
+	padding-top: 2%;
+  padding-bottom: 2%;
+	text-align: center;
+	color: white;
+	font-size: 300%;
+  font-family: 'glacial indifference';
+  font-weight: bold;
+}
+
+#main{
+  color:black;
+  background-color: rgba(220, 220, 220, 0.8);
+  font-family: 'Segoe UI';
+  text-align: center;
+  font-size: 80%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0.5px;
+  border-radius: 25px;
+}
+
+#footer{
+	text-align: center;
+	justify-content: center;
+	background: rgba(220, 220, 220, 0.8);
+	padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 25px;
+}
+
+h1, h2{
+  color: black;
+  font-family: 'glacial indifference';
+}
+
+h1{
+  font-size: 170%;
+}
+
+h2{
+  font-size: 120%;
+}
+
+#img{
+  padding-top: 3%;
+}
+
+p, a{
+  text-align: left;
+  font-size: 200%;
+}
+
+u{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 115%;
+}
+
+#base{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+#ublack{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 115%;
+}
+
+#title{
+  text-align: left;
+  font-weight: bold;
+  font-size: 260%;
+  text-decoration: underline black ;
+}
+
+#subtitle{
+  text-align: left;
+  font-weight: bold;
+  font-size: 200%;
+  text-decoration: underline black ;
+  text-decoration-style: dotted;
+}
+
+/* Variable tags */
+
+/* Style main content that is split into 2 columns*/
+#mainLR{
+  color:black;
+  background-color: rgba(220, 220, 220, 0.8);
+  font-family: 'Segoe UI';
+  font-size: 80%;
+  display: flex;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 25px;
+}
+
+/* Style left side of 2 column content spanning 1 half*/
+#left{
+  flex: 50%;
+  padding-right: 1%;
+  border-right: 2px solid black;
+  border-collapse: collapse;
+}
+
+/* Style right side of 2 column content spanning 1 half*/
+#right{
+  flex: 50%;
+  padding-left: 1%;
+  border-left: 2px solid black;
+  border-collapse: collapse;
+}
+
+/* Style table*/
+#table{
+  text-align: center;
+  font-family: 'glacial indifference';
+}
+
+#td{
+  border: 2px solid black;
+  border-collapse: collapse;
+  font-family: 'glacial indifference';
+  font-size: 150%;
+  text-align: left;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+</style>
+</head>
+<body>
+
+  <h1 id=header>
+    Counter-Strike.
+  </h1>
+
+  <div class="navbar">
+    <a  href="index.html">Main Menu</a>
+    <a  href="page1.html">Gameplay Part 1</a>
+    <a  href="page2.html">Gameplay Part 2</a>
+    <a  href="page3.html">History</a>
+    <a  href="page4.html">Esports Scene</a>
+    <a  class="active" href="page5.html">Esports History</a>
+  </div>
+
+  <center><img src="img/majors.png" width="1001px" height="563px" id="img" alt="Major winners"></center>
+  <u><center>A section in CS:GO where it displays the past Major's winners and finalists, acknowledging the illustrious esports scene.</center></u>
+  <br><br>
+
+  <div id="main">
+      <h1 id="title">Early 2000s - early 2010s</h1>
+      <p>For a tactically convoluted and complex game with a high skill ceiling, many small events and tournaments started to take place. But it is not untill 2000 where the 1st prestigious CS 1.6 international tournament was hosted in Dallas, Texas, named the Cyberathlete Professional League (CPL) Winter Championship, won by Ninjas in Pyjamas (NiP). At a prize pool of $150,000, many considered this to be the first "Major" of the game, although the Major designation did not happen untill the era of CS:GO.</p>
+      <p>In 2002, the World Cyber Games became the next tournament to host competitive Counter-Strike, followed by the Electronic Sports World Cup in 2003. These, along with the bi-annual CPL tournaments, were the dominant Majors of CS 1.6 through 2007. ESL, then added Counter-Strike to its Intel Extreme Masters (IEM) series. As mentioned before, CS: S was dividing pro players and casual players alike due to its lower skill ceiling and other issues at hand.</p>
+      <p>Counter-Strike esports gradually decreased in popularity during the late 2000s and early 2010s. This was in part due to the fractured competitive scene, but also due to the newcomer MOBA genre overcoming Counter-Strike's significant stronghold in the team based esport.</p>
+  </div><br><br>
+
+  <div id="mainLR">
+    <div id="left">
+      <h1 id="title">2012 - 2013</h1>
+      <p>The release of CS:GO in that year brought together the divided bunch of Counter-Strike fans and united them under a single banner that is CS:GO. Unfortunately, the game sucked. Riddled with gameplay issues, imbalance, bugs and many more. So players returned back to their respective games, to where they came from.</p>
+      <p>It was not until Valve put effort into rebalancing the game and supporting the game that the game became as well rounded as it had become. But pros was uneager to let go of CS 1.6 and CS:S, so not much attention was brought into the game at large. It was at this time where an esteemed Swedish team, Ninjas in Pyjamas started to gain traction in CS:GO.</p>
+      <p>The legendary core of 
+        <a href="https://www.hltv.org/player/39/get-right" style="font-size: 120%;">Christopher "GeT_RiGhT" Alesund,</a>
+        <a href="https://www.hltv.org/player/29/f0rest" style="font-size: 120%;">Patrik "f0rest" Lindberg,</a>
+        <a href="https://www.hltv.org/player/7147/fifflaren" style="font-size: 120%;">Robin "Fifflaren" Johansson,</a>
+        <a href="https://www.hltv.org/player/884/xizt" style="font-size: 120%;">Richard "Xizt" Landström</a>
+        and
+        <a href="https://www.hltv.org/player/7148/friberg" style="font-size: 120%;">Adam "friberg" Friberg</a>
+         were second to none in that era, dominant in every match they played. They have set a Counter-Strike record where to this day no one can break which is their 87:0 record where they won 87 maps undefeated.</p>
+         <p>In the meantime, teams started to notice NiP's reign of terror and started to jump on the CS:GO bandwagon. Teams such as French powerhouse VeryGames and their very own brother from Sweden, Fnatic.</p>
+         <p>Fnatic became their own supersquad when they won the very first Valve sponsored Major, DreamHack Winter 2013 at Jönköping, Sweden. The prize pool were a far cry from today at just $250,000, but it was a very important stepping stone to mature the game and the esport scene itself.</p>
+         <p>Moving into 2014, more and more teams started to enter the fray of CS:GO esports, all from various corners of the world, from Asia to the Americas to Europe to Australia, all leaving CS 1.6 and CS:S behind.</p>
+    </div>
+
+    <div id="right">
+      <colgroup>
+      <col style="text-align: center; font-family: 'Segoe UI';">
+      </colgroup>
+      <h1 id="title" style="text-align: center;">Major Winners</h1><br>
+      <table id="table">
+
+        <tr>
+          <td id="td"><a href="https://www.hltv.org/events/1270/dreamhack-winter-2013" style="font-size: 120%;">DreamHack Winter 2013</a></td>
+          <td id="td"><b>Fnatic</b></td>
+        </tr>
+    
+        <tr>
+          <td id="td"><a href="https://www.hltv.org/events/1333/ems-one-katowice-2014" style="font-size: 120%;">EMS One Katowice 2014</a></td>
+          <td id="td"><b>Virtus.pro</b></td>
+        </tr>
+    
+        <tr>
+          <td id="td"><a href="https://www.hltv.org/events/1444/esl-one-cologne-2014" style="font-size: 120%;">ESL One Cologne 2014</a></td>
+          <td id="td"><b>Ninjas in Pyjamas</b></td>
+        </tr>
+
+        <tr>
+          <td id="td"><a href="https://www.hltv.org/events/1553/dreamhack-winter-2014" style="font-size: 120%;">DreamHack Winter 2014</a></td>
+          <td id="td"><b>Team LDLC.com</b></td>
+        </tr>
+    
+        <tr>
+          <td id="td"><a href="https://www.hltv.org/events/1611/esl-one-katowice-2015" style="font-size: 120%;">ESL One Katowice 2015</a></td>
+          <td id="td"><b>Fnatic</b></td>
+        </tr>
+
+        <tr>
+          <td id="td"><a href="https://www.hltv.org/events/1666/esl-one-cologne-2015" style="font-size: 120%;">ESL One Cologne 2015</a></td>
+          <td id="td"><b>Fnatic</b></td>
+        </tr>
+
+        <tr>
+          <td id="td"><a href="https://www.hltv.org/events/1617/dreamhack-open-cluj-napoca-2015" style="font-size: 120%;">DreamHack Open Cluj-Napoca 2015</a></td>
+          <td id="td"><b>Team EnVyUs</b></td>
+        </tr>
+
+        <tr>
+          <td id="td"><a href="https://www.hltv.org/events/2027/mlg-columbus-2016" style="font-size: 120%;">MLG Columbus 2016</a></td>
+          <td id="td"><b>Luminosity Gaming</b></td>
+        </tr>
+
+        <tr>
+          <td id="td"><a href="https://www.hltv.org/events/2062/esl-one-cologne-2016" style="font-size: 120%;">ESL One Cologne 2016</a></td>
+          <td id="td"><b>SK Gaming</b></td>
+        </tr>
+
+        <tr>
+          <td id="td"><a href="https://www.hltv.org/events/2471/eleague-major-2017" style="font-size: 120%;">ELEAGUE Major: Atlanta 2017</a></td>
+          <td id="td"><b>Astralis</b></td>
+        </tr>
+
+        <tr>
+          <td id="td"><a href="https://www.hltv.org/events/2720/pgl-major-krakow-2017" style="font-size: 120%;">PGL Major: Kraków 2017</a></td>
+          <td id="td"><b>Gambit Esports</b></td>
+        </tr>
+
+        <tr>
+          <td id="td"><a href="https://www.hltv.org/events/3247/eleague-major-2018" style="font-size: 120%;">ELEAGUE Major: Boston 2018</a></td>
+          <td id="td"><b>Cloud9</b></td>
+        </tr>
+
+        <tr>
+          <td id="td"><a href="https://www.hltv.org/events/3564/faceit-major-2018" style="font-size: 120%;">FACEIT Major: London 2018</a></td>
+          <td id="td"><b>Astralis</b></td>
+        </tr>
+
+        <tr>
+          <td id="td"><a href="https://www.hltv.org/events/3883/iem-katowice-2019" style="font-size: 120%;">IEM Katowice Major 2019</a></td>
+          <td id="td"><b>Astralis</b></td>
+        </tr>
+
+        <tr>
+          <td id="td"><a href="https://www.hltv.org/events/4443/starladder-major-berlin-2019" style="font-size: 120%;">StarLadder Major: Berlin 2019</a></td>
+          <td id="td"><b>Astralis</b></td>
+        </tr>
+
+        <tr>
+          <td id="td">ESL One Rio Major 2020</td>
+          <td id="td">Delayed and cancelled due to COVID-19</td>
+        </tr>
+
+        <tr>
+          <td id="td"><a href="https://www.hltv.org/events/4866/pgl-major-stockholm-2021" style="font-size: 120%;">PGL Major Stockholm 2021</a></td>
+          <td id="td"><b>Natus Vincere</b></td>
+        </tr>
+    
+      </table><br>
+    </div>
+  </div>
+
+  <center><img src=" https://img-cdn.hltv.org/gallerypicture/q2P7vZb_NpE-M6cSXGs3dC.jpg?ixlib=java-2.1.0&s=94f0f5f0281223d6c6c8ad7a8a29d406" width="1001px" id="img" alt="DH Winter 2013 Champions"></center>
+  <u><center>The team that won the first ever Counter-Strike: Global Offensive Major.</center></u>
+  <br><br>
+
+  <div id="main">
+  <h1 id="title">2014-2015</h1>
+  <p>3 more Majors took place in 2014, each being won by different teams from different nationalities, signalling CS:GO branching out and slowly phasing out of the CS 1.6 and CS:S era. Virtus.pro were another dominant team in that era, picking up wins left right and center. The French squad were no stranger to wins as well, having the best AWPer in the world means that they are a force to be reckoned with.</p>
+  <p>These 2 years are when Majors are held 3 times per year, meaning that teams had more chance to pick up trophies and put their name on the board.Fnatic won 3 majors in the span of this 2 years, making them the first team to do so, only having their record beat by Astralis few years later. Viewership records were broken and this phase of competitive Counter-Strike is widely regarded as its golden age. It was also at this time where the player base skyrocketed due to the fact that skins were introduced in late 2013, giving new life to a popular game.</p>
+  </div><br><br>
+
+  <div id="main">
+    <p>But as they say, life is not all sunshine and rainbows, no less Counter-Strike. With all its newfound fame, it also brought upon various issues as well. Scandals popped up here and there and Valve updated the game into the Wild West at this time, causing haywire on player and pros alike. A few of the most infamous scandals includes the match fixing scandal, where players from a team called iBuyPower had made backdoor deals with various organizations that they purposefully lose a game where people betting on them to lose wins money in the form of skins, and the players get a cut as well.</p>
+    <p>An esports journalist caught wind of this and reported it to the public. The people thought he was bluffing and did not bat an eye. But new evidence surfaced and Valve noticed it as well. As a result, Valve permanently banned 4 out of 5 of the players, excluding 
+    <a href="https://www.hltv.org/player/7440/skadoodle" style = "font-size: 120%;">Tyler "Skadoodle" Latham,</a>
+    because the skins were not found to be in his account. He then later went on to win a Major of his own, the first for North America.</p>
+    <p>People thought this ban were overkill, essentially ruining the lives of the players involved as they could not compete in any tournament. Even the journalist thought that is was overkill as well. Valve then changed the rules such that they are only banned in Majors.</p>
+    <p>Not only that, another scandal that happened in a Major no less has ruffled the feathers of everyone. Dubbed "olofboost" due to the player using the exploit, 
+    <a href="https://www.hltv.org/player/885/olofmeister" style = "font-size: 120%;">Olof "olofmeister" Kajbjer.</a>
+    During DreamHack Winter 2014, fnatic were on a tear, winning tournaments like nobody's business. They were fated to win this Major, the only one to stop them were French powerhouse Team LDLC.com, the eventual winners of the tournament.</p>
+    <p>The first map went the way of the French, and the second, Overpass were starting to slip out of fnatic's hands as well. Down 13-3, they were desperate for any life back in the tournament. They had a trick up their sleeve, an overpowered boost that allows players to have a bird's eye view of the map. They used it round after round, and slowly brought it back round after round, until they eventually won the map 16-13, winning 13 straight rounds and in the end won the whole match.</p>
+    <p>Post game, players and pros were divided among this issue, were the boost illegal, immoral, or it shall be counted as fnatic's win since it was a part of the map. The organizers reviewed the match and found that actually both teams were at fault, since they were both exploiting a pixel to boost players to an elevated position. They ruled that the game shall rematch at 13-2 and LDLC were not even keen to play the rematch at all. At the end, a rematch was not called. Instead, fnatic forfeited the match, and LDLC went ahead and won the whole tournament.</p>
+  </div>
+
+  <br><br><center><iframe width="1001" height="563" src="https://www.youtube.com/embed/DqB95s47f1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+  <u><center>A video showing the rounds where the olofboost were significantly used.</center></u><br><br>
+
+  <div id="main">
+    <h1 id="title">2016-2017</h1>
+    <p>As time goes on though, the esports scene slowly became more mature and more well rounded. The game started growing internationally, and it has attracted new players into the fray. Back then, pro players usually are made up of CS 1.6 and CS:S veterans who came to CS:GO to continue their career and legacy. Coming into this era, up and coming players started to make a name for themselves in the pro scene,  and esports organizations started to take notice.</p>
+    <p>It was here that the Brazilian superpowers from the CS 1.6 era started to take hold of the competition. The super squad consisting of
+      <a href="https://www.hltv.org/player/8564/fer" style="font-size: 120%;">Fernando 'fer' Alvarenga,</a>
+      <a href="https://www.hltv.org/player/9216/coldzera" style="font-size: 120%;">Marcelo 'coldzera' David,</a>
+      <a href="https://www.hltv.org/player/2023/fallen" style="font-size: 120%;">Gabriel 'FalleN' Toledo,</a>
+      <a href="https://www.hltv.org/player/557/fnx" style="font-size: 120%;">Lincoln 'fnx' Lau</a>
+      and
+      <a href="https://www.hltv.org/player/9217/taco" style="font-size: 120%;">Epitacio 'TACO' de Melo</a>
+    flourished that year. These 5 players swept away the competition at that time, winning both Majors in 2016, first under the banner of Luminosity Gaming, next under the name of SK Gaming. Same core, but different name.</p>
+    <p>2017 carried on the hype of the previous year, up and coming players started crowding the scene one after the other. This was also the year that the resurgence of the Danish started to take hold. The Danish team Astralis kicked off the year with their first Major win. Teams were diversifying by using different players from all over the world, picking up whoever held superiority at that time. No one region were considered the greatest at that time, everyone was trying to get their hands dirty</p>
+    <p>It was also the year where the CIS region also got their first Major trophy, in an outcome that no one expected, and widely regarded as a Cinderella story in the world of esports as a whole. Gambit Esports, under in-game leader 
+      <a href="https://www.hltv.org/player/484/zeus" style="font-size: 120%;">Danylo "Zeus" Teslenko,</a>
+    the team brought hope to a dying region. Consisting of mainly players from Kazakhstan, they shocked the CS:GO scene by winning the tournament by a landslide.</p>
+    <p>Zeus left his old team, Natus Vincere (NAVI) in the hopes of acheiving a win at a Major. Dabbling here and there, he finally settled on Gambit, and his drive to win the Major is 
+      <a href="https://twitter.com/ZeusCSGO/status/751486536001187840" style="font-size: 120%;">clearly seen,</a>
+    and people hoped that he will win, for the sake of the CIS region and himself. In the end, he did what many other could not acheive.</p>
+  </div>
+
+  <br><br><center><iframe width="1001" height="563" src="https://www.youtube.com/embed/xjMGJky11RM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+  <u><center>The winning moment that Gambit won the 2017 PGL Kraków Major.</center></u><br><br>
+
+  <div id="main">
+    <h1 id="title">2018-2019</h1>
+    <p>Right after the esports world is shocked by an amazing underdog story from the likes of Gambit, they did not see the last of it.</p>
+    <p>Avid fans of esports know that CS:GO is not North America's strong suit. They can compete with the best of the best, the European superstars, sometimes even winning events dominated by the Europeans. But when it comes to their own region, they beat all their competition, proving that they can compete in the upper echelons of Counter-Strike. In 2014 we have iBuyPower, 2016 Team Liquid, at 2018 then, we have Cloud9.</p>
+    <p>NA can keep up with the best, but at Majors, they usually struggled to reach the end. Team Liquid got countless final appearances at Majors, most notably at 2016 ESL Cologne Major, reaching the Grand Final, just to be taken down by their Brazilian counterparts. Cloud9 went into home soil at the Boston ELEAGUE Major, hoping to prove that they were no slouch when it comes to Counter-Strike.</p>
+    <p>They started off strong during the Challenger's stage, dominating the bunch, going 3-0 undefeated into the Legends stage. During the Legends stage, they started to slip. Losing matches until they are 0-2 down, meaning that they are 1 loss away from being eliminated. They fought back, round after round, map after map, match after match until they advanced 3-2.</p>
+    <p>After bagging a spot in the finals, they went against the team who advanced 3-0, but they were no match for the underdogs, swiftly defeated 2-0 by Cloud9. Next match they struggled a bit, facing against the Brazillians that dominated 2016. But in the end they won 2-1, facing the favorites in the tournament, the team that widely regarded to win the Major, FaZe Clan.</p>
+    <p>An international supersquad from various European countries, housing one of the best in-game leaders, the best AWPer and the best aimer at the time, Cloud9 were facing the team of their lives. They were unfazed, even though they have lost against each other in the past, they did not give up.</p>
+    <p>First match, Mirage. They fought back tooth and nail, but small missplays and mistakes costed them and they lost 16-14. They brought it back in the next map, Overpass, winning it resoundingly with a 16-10 score. Now, the decider map, Inferno, one of the best decider maps in CS:GO history. They played their hearts out, trading blows with each other, in the end, the score was 15-9, favoring FaZe. Cloud9 were 1 round away from losing everything.</p>
+    <p>They did not fall down, they brought it back, slowly, round after round until 15-15. Overtime. Both teams were exhausted and no one knows which team will win it. Back and forth, back and forth they fought. Second overtime, they stil fought. No winner was in sight. Not until Cloud9 acheived Championship Point, at the last round, only one FaZe player faces off with 2 Cloud9 players. And the final shot rings out, and Cloud9 wins the Major.</p>
+    </div>
+
+  <br><br><center><iframe width="1001" height="563" src="https://www.youtube.com/embed/_PAdiVL0abs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+  <u><center>Video showing the importance of this Major and why is it one of the best Majors of all time.</center></u><br><br>
+
+  <div id="main">
+    <p>The match and Major run by Cloud9 was considered one of the best of all time, and to this day, nothing has came close. Right after the Major, the team had broken up, caused by conflicts existing prior to the major. Some stayed and some left for other teams, some has even retired.</p>
+    <p>In the background though, a storm was brewing. The Danish squad Astralis were starting to make moves, winning tournaments like nobody's business. Slowly but surely, Astralis dominated the esports scene after years of stagnation. They have slowly cemented to be the best team of all time, starting in 2018. They started off by winning the FACEIT London Major in 2018, after that Katowice 2019 and finally Berlin 2019, making them the second team to win 3 Majors in a row and the first team to win 4 Majors total. Not only that, they also won the Intel Grand Slam Season 1, being the first team to do so, truly cementing them to be the best team in Counter-Strike.</p>
+    <p>In the middle of their amazing run however, another Cinderella story is brewing under everyone's guise. During IEM Katowice 2019, the first Major of the year, Astralis were fated to run through all the competition as they were expected, and they did, but this story does not revolve around Astralis. Instead, a laid back Finnish team with a hunger for victories is.</p>
+    <p>ENCE were not expected to win big in the tournament, nor were they ever the favorites. They were not expected to go past the Challenger's stage even. But these 3 years were the years of Cinderella stories and they were about to be in one as well. They were considered a big meme in the Counter-Strike community due to their tagline "EZ4ENCE". But in truth they have world class players as well, a top notch in-game leader, a veteran who have played in various teams that can guide them, a young up and comer that is eager to shoot heads, this team are capable of competing in Tier-1 Counter-Strike.</p>
+    <p>After dominating the Minors, they came to the Majors with ambition on their minds, winning the Challenger's stage 3-1, getting right in the Legend's stage comfortably. Similar to the stars of the previous year, they once again went through the Legend's stage 0-2, just to bring it back to 3-2, exactly like Cloud9. To the Champions stage, they faced off against Team Liquid, the second best team in the world at that time. In true underdog fashion, they won it 2-0, advancing to the semi-finals, against Natus Vincere, the third best team in the world at that time.</p>
+    <p>They did win 2-1, but the matches itself were no slouch either, both maps that ENCE won were with 16-14 scorelines, causing heartbreak in one end and exhilaration in the other. At this point, not only is the Finnish side cheering on ENCE, but the whole Counter-Strike scene were, acknowledging them and respecting them to reach that high level of Counter-Strike. Although they did lose to Astralis in the end 0-2, their run in the Major and their story will forever be remembered in Counter-Strike history.</p>
+  </div>
+
+  <br><br><center><iframe width="1001" height="563" src="https://www.youtube.com/embed/F10PwYJaOfI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+  <u><center>A fan made video on the journey ENCE has been through to be the Grand Finalists of a Major.</center></u><br><br>
+
+  <div id="main">
+    <p>2019 did not stop there, we saw Team Liquid being the best team in the whole world for the majority of the year, something extremely rare for a North America team. They also won Season 2 of the Intel Grand Slam, bagging home the second million dollars Intel provided in a record breaking 63 days. All this because Astralis decided that they wanted to take a break for half a year.</p>
+    <p>As if the Cinderella stories stopped there, another team from CIS by the name of Avangar also emulated what Gambit, Cloud9 and ENCE has done before them. They also went 3-2 in Challengers Stage, went 3-1 in Legends, and finally reached the Grand Finals and also fittingly taken down by Astralis. As normal, no one expected them to win, no one cheered for them and no one knew what they can take on. And the world shook under the might they can pull against strong and formidable adversity.</p>
+    <p>And in 2020, everything changed.</p>
+    <h1 id="title">2020-current</h1>
+    <p>As we all know, the pandemic took a hit on everything, including esports. At the start of the year, NAVI won their first event in a very long time, starting their Intel Grand Slam run with it. It was at the start of the pandemic, the crowds were not allowed to enter, so the whole arena was as still as night. Going forward, all matches were only played online, to reduce the risk of transmission, as compared to LAN networking during events. A plethora of issues came, internet issues, equipment issues, logistic issues and many more. The pandemic limited what organizers and players can do.</p>
+    <p>New blood came up and changed the esports scene, the old guard started to go back into the shadows. Too used to LAN, they did not innovate and change during the online era, thus, new teams and players came on and filled the void. Dubbed "onliners", the prevalent ones during this era is Gambit Esports, making their way back into Counter-Strike after years of stagnation. With a mix of new CIS players and few veterans left behind, they dominated during the online era.</p>
+  </div><br><br>
+
+  <div id="main">
+    <p>The planned ESL Rio Major was postponed again and again and finally cancelled due to severe impact on Brazil due to the pandemic. Players tried to embrace the online era but many fell off. Team Liquid shuffled their roster multiple times, Astralis's star AWPer transferred to another team, NAVI and many teams swapped players here and there but only resilient teams can endure the online era. Teams like Gambit and Heroic persevered through it.</p>
+    <p>NAVI did not slack either, winning quite a number of online events and winning Season 3 of the Intel Grand Slam as well. The viewership for these events did not flourish either, due to it being online and losing the essence of competitive Counter-Strike, without the crowds, without LAN, without real arenas, cancelled events, the situation is looking dire. A scandal involving a bug in the game did not help either, the bug enables coaches to see where the positions of the enemies were and the bug did not get reported for a long time. When Valve caught wind of this, they banned the coaches who exploited this bug in future events. The team that took the most damage from this is none other than the wonderteam of the online era, Heroic.</p>
+    <p>Starting of 2021, the impact of the pandemic is slowly getting better, events are slowly coming back, crowds returning and others. The first LAN since the pandemic were ESL Cologne 2021, and NAVI were tearing through the competition. Even with no crowds, they won the event convincingly and has proven themselves as a real threat in competitive Counter-Strike post pandemic. Slowly but surely, the fire of competitive Counter-Strike that the pandemic had extinguished is back, and the onliners from the last year were also stepping up to LAN play, debunking that they are good just because of the online era.</p>
+    <p>The only Major of 2021 was the PGL Stockholm Major, where fans and players were excited to play in. Crowds were back, the arenas is lively with the yells and shouts of fans, Counter-Strike is back. Being the first Major in a long time, PGL had big shoes to fill, and they did not do a good job.</p>
+    <p>Many issues were prevalent during the event, such as the lack of Heads Up Display (HUD) in the first few matches, audio issues that were consistently happening throughout the event, poor production quality and many more. This left a sour taste in fans' mouths but it did not stop their love for Counter-Strike. The old guard and the onliners banded together and played some quality Counter-Strike in this event, and fans loved it. They loved it so much that it broke viewership records of all time. In the end, the dominators NAVI won the Major and the best player of all time, s1mple, finally won a Major.</p>
+    <p>This brings us to current day, events are back, LANs are back, teams are back and most importantly, Counter-Strike is back. NAVI is still the most dominant team, Team Vitality kicked off Season 4 of the Intel Grand Slam with a win at IEM Winter 2021 and the Blast Global Finals are happening. A bright future is expected for Counter-Strike, and the playerbase is as strong as ever. This is truly, a game that will never die.</p>
+  </div>
+
+  <br><br><center><iframe width="1001" height="563" src="https://www.youtube.com/embed/H8Nv--NOU2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+  <u><center>Counter-Strike. Culminated into one video.</center></u><br><br>
+  
+  <br><br>
+  <div id="main"><br>
+    <p style="text-align: center;">No matter what you believe in, Counter-Strike players can all agree on one thing: </p>
+    <p style="text-align: center; font-size: 260%;"><b>This is not just a game, this is our religion, our culture, our way of life.</b></p>
+    <p style="text-align: center;">You have brought yourself to the end of this journey. <br>
+      <a style="font-size: 120%;" href="index.html">Click here</a>
+    to experience it all again.
+    </p>
+  </div>
+
+  <br><br>
+  <div id="footer">
+    <h1>Created by Group 2:</h1>
+    <h2>Liau Kai Ze</h2>
+    <h2>Lai Cheng Yung</h2>
+    <h2>Tan Jing Yan</h2>
+    <h2>Chong Zhi Xuan</h2>
+    <h2>Wafa Sidig Mohamed Sidig</h2>
+  </div>
+
+  <br>
+  <u id="base"><center>Background Image: A wise shot of the LanXess Arena, Cologne, hosting a tournament called ESL One Cologne 2019, sometimes referred to as "The Cathedral of Counter-Strike".</center></u>
+  <br>
+
+</body>
+</html>

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Counter-Strike Gameplay</title>
+<meta charset="UTF-8">
+<link rel = "icon" href = "https://seeklogo.com/images/C/csgo-logo-CAA0A4D48A-seeklogo.com.png" type = "image/x-icon">
+
+<style>
+
+/* Constant tags */
+
+.navbar {
+  width: 100%;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 0px;
+  color: white;
+  text-decoration: none;
+  font-size: 200%;
+  width: 16.666666666666666666666666666666666666666666666667%; 
+  padding-bottom: 1%;
+  padding-top: 1%;
+  text-align: center;
+  font-family: 'glacial indifference';
+  border-radius: 25px;
+}
+
+.navbar a:hover {
+  background-color: rgba(0, 38, 255, 0.7);
+	color: white;
+}
+
+.navbar a.active {
+  background-color: rgba(220, 220, 220, 0.8);
+  color: rgba(0, 38, 255, 0.7);
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+body {
+  background-image: url('https://img-cdn.hltv.org/gallerypicture/QxsjAl_tNUOWpSI-5OOE_F.jpg?ixlib=java-2.1.0&s=847652d2103e15313ed69d279658c7e2');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#header 
+{
+	padding-top: 2%;
+  padding-bottom: 2%;
+	text-align: center;
+	color: white;
+	font-size: 300%;
+  font-family: 'glacial indifference';
+  font-weight: bold;
+}
+
+#main{
+  color:black;
+  background-color: rgba(220, 220, 220, 0.8);
+  font-family: 'Segoe UI';
+  text-align: center;
+  font-size: 80%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0.5px;
+  border-radius: 25px;
+}
+
+#footer{
+	text-align: center;
+	justify-content: center;
+	background: rgba(220, 220, 220, 0.8);
+	padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 25px;
+}
+
+h1, h2{
+  color: black;
+  font-family: 'glacial indifference';
+}
+
+h1{
+  font-size: 170%;
+}
+
+h2{
+  font-size: 120%;
+}
+
+#img{
+  padding-top: 3%;
+}
+
+p, a{
+  text-align: left;
+  font-size: 200%;
+}
+
+u{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 115%;
+}
+
+#foot{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+#title{
+  text-align: left;
+  font-weight: bold;
+  font-size: 260%;
+  text-decoration: underline black ;
+}
+
+#subtitle{
+  text-align: left;
+  font-weight: bold;
+  font-size: 200%;
+  text-decoration: underline black ;
+  text-decoration-style: dotted;
+}
+
+/* Variable tags */
+
+/* Style ordered lists*/
+ol{
+  color:black;
+  font-family: 'Segoe UI';
+  font-size: 200%;
+}
+
+/* Style icons of primary lists*/
+#super:before {
+  content: "💣";
+  margin-left: -40px; 
+  margin-right: 10px; 
+}
+
+/* Style icons of secondary lists*/
+#sub:before {
+   content: "💥";
+   margin-left: -35px; 
+   margin-right: 10px; 
+}
+
+/* Style list font*/
+#list{
+  color:black;
+  text-align: center;
+  font-size: 200%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+</style>
+</head>
+<body>
+
+  <h1 id=header>
+    Counter-Strike.
+  </h1>
+
+  <div class="navbar">
+    <a  href="index.html">Main Menu</a>
+    <a  href="page1.html">Gameplay Part 1</a>
+    <a  class="active" href="page2.html">Gameplay Part 2</a>
+    <a  href="page3.html">History</a>
+    <a  href="page4.html">Esports Scene</a>
+    <a  href="page5.html">Esports History</a>
+  </div>
+
+  <br><br>
+  <center><iframe width="1001px" height="563px" src="https://www.youtube.com/embed/edYCtaNueQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+  <u><center>Trailer for the game. Released by Valve.</center></u>
+  <br><br>
+
+  <div id="main">
+    <h1 id="title">Game Modes</h1>
+    <p>Other than the main game mode discussed previously, there are still a plethora of game modes provided as well.</p>
+    <h1 id="subtitle">Casual</h1>
+    <p>This mode differs slightly from the normal competitive mode, that is instead of 5 players vs 5 players, it is 10v10. It is mainly used to be played for fun and does not affect the rank that the players have.</p>
+    <p>Armor and helmet are provided for free every round, and a defuse kit as well. Instead of 30 rounds, there is 16 rounds where the first team to win 9 rounds wins.</p>
+    <h1 id="subtitle">Wingman</h1>
+    <p>A mode blending Casual and Competitive modes together, it is a 2v2 mode where armor and kits need to be bought, matches are shorter, similar to Casual mode where first to 9 rounds wins.</p>
+    <p>More strategically easier and relaxing but competitive nonetheless, it affects players Wingman rank but not the Competitive Ranks.</p>
+    <h1 id="subtitle">Deathmatch</h1>
+    <p>A staple of major first-person shooters, you are placed in a map with 10 minutes with 1 objective, shoot everything that moves.</p>
+    <p>Weapons can be freely chosen and the player with the highest score after 10 minutes wins. It is here that most players choose to warmup before heading into a ranked match so that they can aim better.</p>
+    <h1 id="subtitle">Danger Zone</h1>
+    <p>An attempt from Valve to cash in at the "Battle Royale" genre hype in 2017 and 2018. Players are put in a map far larger than normal maps in other game modes to fight to be the last man standing.</p>
+    <p>Weapons and equipment are not given at the start, players must search and gather equipment and weapons that can help them win the game. Can be played with a teammate to form a group of 2 or can play it solo.</p>
+    <h1 id="subtitle">War Games</h1>
+    <p>A game mode that contains other game modes that are mainly played for fun, such as Arms Race, where players use different weapons to get kills until all weapons has been used which will be the winner.</p>
+    <p>On top of that, Demolition is similar to defusal but every kill you get, you will get a extra piece of utility. Flying Scoutsman is by using the SG 553, or more commonly known as the scout to kill opponents, the catch is that there is low gravity and the gun's accuracy is at a constant 100%. Finally there is retakes where CTs retake a bombsite with the bomb planted, just as the Competitive game mode.</p>
+    <h1 id="title">Maps</h1>
+    <p>Maps are an integral part of the game. Simple in nature, complex in practice, it is paramount that teams understand it inside and out to gain the upper hand against enemy teams.</p>
+    
+    <p style="text-align: center;">There are 6 types of maps included in the game:</p>
+
+    <ul id="list" style="margin-left: -40px;">
+      <li id="super"><b>Active Duty Defusals</b>
+        <ul>
+          <li id="sub">Mirage</li>
+          <li id="sub">Inferno</li>
+          <li id="sub">Overpass</li>
+          <li id="sub">Vertigo</li>
+          <li id="sub">Nuke</li>
+          <li id="sub">Ancient</li>
+          <li id="sub">Dust II</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Reserve Duty Defusals</b>
+        <ul>
+          <li id="sub">Train</li>
+          <li id="sub">Cache</li>
+          <li id="sub">Basalt</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Hostage Maps</b>
+        <ul>
+          <li id="sub">Agency</li>
+          <li id="sub">Office</li>
+          <li id="sub">Insertion II</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Wingman Maps</b>
+        <ul>
+          <li id="sub">Ravine</li>
+          <li id="sub">Extraction</li>
+          <li id="sub">Vertigo</li>
+          <li id="sub">Inferno</li>
+          <li id="sub">Overpass</li>
+          <li id="sub">Cobblestone</li>
+          <li id="sub">Train</li>
+          <li id="sub">Nuke</li>
+          <li id="sub">Shortdust</li>
+          <li id="sub">Lake</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>War Games Maps</b>
+        <ul>
+          <li id="sub">Lake</li>
+          <li id="sub">Baggage</li>
+          <li id="sub">Safehouse</li>
+          <li id="sub">St. Marc</li>
+          <li id="sub">Shoots</li>
+          <li id="sub">Lunacy</li>
+          <li id="sub">Monastery</li>
+          <li id="sub">Sugarcane</li>
+          <li id="sub">Bank</li>
+          <li id="sub">Shortdust</li>
+          <li id="sub">Dizzy</li>
+          <li id="sub">Bank</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Danger Zone Maps</b>
+        <ul>
+          <li id="sub">County</li>
+          <li id="sub">Sirocco</li>
+          <li id="sub">Blacksite</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h1 id="title">Slang</h1>
+    <p>From it's long and winding history, no doubt Counter-Strike players has developed a language of their own, either to simplify communication or just for laughs, this is a list of common slang said by many players.</p>
+
+    <ul id="list" style="margin-left: -40px;">
+      <li id="super"><b>1g</b>
+        <ul>
+          <li id="sub">The short form name of former pro player turned streamer, Summit1g where he accidentally lost a round due to him running to his own molotov, causing him to die by his own hand, in the end resulting in his team losing the whole match. So whenever someone dies to their own molotov, instinctively we will call out "1g".</li><br>
+          <iframe width="1001px" height="563px" src="https://www.youtube.com/embed/FCEws6lyQNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+        </ul>
+      </li>
+      <li id="super"><b>200IQ</b>
+        <ul>
+          <li id="sub">A player that pulled off a smart play.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Ace</b>
+        <ul>
+          <li id="sub">Where a player gets all 5 kills in the round.</li><br>
+          <img src="img/ace.png" alt="ace"><br><br>
+        </ul>
+      </li>
+      <li id="super"><b>AFK</b>
+        <ul>
+          <li id="sub">Away From Keyboard. Usually denotes where a player has not moved in a long period.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Aimbot</b>
+        <ul>
+          <li id="sub">A hacking program that allows players to shoot at enemies without controlling the game. Not allowed in the game.</li><br>
+          <iframe width="1001px" height="563px" src="https://www.youtube.com/embed/UYShpWaEzXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+        </ul>
+      </li>
+      <li id="super"><b>Anti-Flash</b>
+        <ul>
+          <li id="sub">Where a player looks at a wall or at the floor to avoid being blinded by a flashbang.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>AWPer</b>
+        <ul>
+          <li id="sub">Refers to a player well skilled in using the AWP.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Bait</b>
+        <ul>
+          <li id="sub">Where a player uses a teammate to "bait" the enemy into shooting the teammate, unknown of the second player, giving the team the advantage.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Bhop(Bunny Hop)</b>
+        <ul>
+          <li id="sub">Where a player exploits the mechanics of the game whereby you gain higher speed by jumping in a specific way compared to running normally.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Boost</b>
+        <ul>
+          <li id="sub">Where a player jumps on their teammate's head, looking over an elevated position.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Buff</b>
+        <ul>
+          <li id="sub">Refers to a increase in performance or value to a certain weapon or equipment. Opposite of nerf.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Crabwalk</b>
+        <ul>
+          <li id="sub">Where a player walks around the map while crouching, mimicking a crab. Usually done as a joke.</li><br>
+          <iframe width="1001px" height="563px" src="https://www.youtube.com/embed/FAdJnTQBUXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+        </ul>
+      </li>
+      <li id="super"><b>Clutch</b>
+        <ul>
+          <li id="sub">Where a player faces a team by their own, sometimes denoted as 1vX(X being enemies remaining)</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Clutch or Kick</b>
+        <ul>
+          <li id="sub">A joke about if a player fails to clutch, the team will kick them out the game.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Deagle</b>
+        <ul>
+          <li id="sub">Short form for Desert Eagle.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Dink</b>
+        <ul>
+          <li id="sub">Where a player hits a headshot but not killing the enemy, presumed that the enemy is therefore low in Health Points(HP).</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Drop</b>
+        <ul>
+          <li id="sub">Where a player requests a teammate for a weapon as they don't have the money to buy the weapon.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Entries</b>
+        <ul>
+          <li id="sub">Where a T player enters a bombsite and gets kills.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Exec(Execute)</b>
+        <ul>
+          <li id="sub">Where a T team attacks a bombsite with coordinated utility and entrying.</li><br>
+          <iframe width="1001px" height="563px" src="https://www.youtube.com/embed/IwoAXRJ1Hgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+        </ul>
+      </li>
+      <li id="super"><b>Exits</b>
+        <ul>
+          <li id="sub">Where a CT player gets a kill on a T as the bomb explodes, hurting the opposite's team economy.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>EZ(Easy)</b>
+        <ul>
+          <li id="sub">A term to signify something as easy, usually used as a joke or to taunt opponents.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Fake</b>
+        <ul>
+          <li id="sub">Where a T team attacks a bombsite with coordinated utility but attacks the other bombsite through deception.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Flick</b>
+        <ul>
+          <li id="sub">Where a player "flicks" his mouse quickly to kill an enemy.</li><br>
+          <iframe style="margin-left: -50px;" width="1001px" height="563px" src="https://www.youtube.com/embed/aUFTIdLGQsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+        </ul>
+      </li>
+      <li id="super"><b>Frag</b>
+        <ul>
+          <li id="sub">Similar to "kills"</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>(Top/Bottom) Frag</b>
+        <ul>
+          <li id="sub">Where a player has the highest/least kills respectively.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Gamble Stack</b>
+        <ul>
+          <li id="sub">Where a CT team puts all players in 1 bombsite, hoping they go to that exact bombsite, knowing full well there is a chance the enemy will go to that other bombsite.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>GG(Good Game)</b>
+        <ul>
+          <li id="sub">Where players type or say after a game to signify sportsmanship.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Glass Cannon</b>
+        <ul>
+          <li id="sub">Where a player uses a AWP without armor, as the AWP is quite expensive yet powerfull. Used when the economy is  poor.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>GLHF(Good Luck Have Fun)/HF(Have Fun)</b>
+        <ul>
+          <li id="sub">Typed or spoken in the start of the game to signify sportsmanship.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Grief</b>
+        <ul>
+          <li id="sub">Where a player intentionally loses a game.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Hand Cannon</b>
+        <ul>
+          <li id="sub">Referring to the Desert Eagle pistol due to its high damage and high skill ceiling.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>IGL(In Game Leader)</b>
+        <ul>
+          <li id="sub">Responsible to call strategies or strats to the team.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Juan Deag(One Deag)</b>
+        <ul>
+          <li id="sub">Where a player shoots an enemy in the head just by using 1 bullet, usually using a Desert Eagle. See also "One Tap"</li><br>
+          <iframe width="1001px" height="563px" src="https://www.youtube.com/embed/dg6TQy6pGfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+        </ul>
+      </li>
+      <li id="super"><b>Kobe</b>
+        <ul>
+          <li id="sub">Spoken <b>AFTER</b> getting a kill by the HE grenade. Not to be confused by "Yeet".</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>KZ</b>
+        <ul>
+          <li id="sub">Refers to a type of map where players can train their movement in game.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Legged</b>
+        <ul>
+          <li id="sub">Spoken after hitting an enemy in the leg with an AWP, denoting the enemy is low on HP.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Lit</b>
+        <ul>
+          <li id="sub">Spoken after hitting an enemy to the point that their HP is low, low enough that a single bullet from anything can kill them. See also "One HP"</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Molly</b>
+        <ul>
+          <li id="sub">Refers to a Molotov or an Incendiary Grenade.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Nade</b>
+        <ul>
+          <li id="sub">Refers to a HE Grenade.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Nade Stack</b>
+        <ul>
+          <li id="sub">Refers to a bunch of HE Grenades thrown to a specific area in hopes that it will get a kill.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Nerf</b>
+        <ul>
+          <li id="sub">Refers to a decrease in performance or value to a certain weapon or equipment. Opposite of buff.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>No Scope</b>
+        <ul>
+          <li id="sub">Killing an enemy by using SSG 08 or AWP without scoping in.</li><br>
+          <iframe width="1001px" height="563px" src="https://www.youtube.com/embed/TcaDca4Nidc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+        </ul>
+      </li>
+      <li id="super"><b>Ninja/Ninja Defuse</b>
+        <ul>
+          <li id="sub">Refers to a sneaky CT defusing the bomb under the noses of the T side.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>NS(Nice Shot)</b>
+        <ul>
+          <li id="sub">Typed or spoken after receiveing a nice shot.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>NT(Nice Try)</b>
+        <ul>
+          <li id="sub">Typed or spoken after your teammate fails a clutch or fails at a situation.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>N1(Nice One)</b>
+        <ul>
+          <li id="sub">Typed or spoken after seeing something worthy of commendation.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>One Tap</b>
+        <ul>
+          <li id="sub">Spoken after hitting a headshot with just 1 bullet shot. Usually with the AK-47 or Desert Eagle.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>One Way</b>
+        <ul>
+          <li id="sub">Denotes a smoke where you can see the enemy but they can't see you and vice versa.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Pop Flash</b>
+        <ul>
+          <li id="sub">A flashbang thrown in such a way that the recipient has no time to react and avoid the flashbang.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Pre-Fire</b>
+        <ul>
+          <li id="sub">Prematurely firing the weapon to the suspected angle of the enemy.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Queue/Q</b>
+        <ul>
+          <li id="sub">Queueing for a match by matchmaking.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Rotate</b>
+        <ul>
+          <li id="sub">An action in which a team goes from a bombsite to another bombsite.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Rush</b>
+        <ul>
+          <li id="sub">An action where a team charges into a bombsite immediately at the start of a round. Common usages is "Rush B"</li><br>
+          <iframe width="1001px" height="563px" src="https://www.youtube.com/embed/vx5iIHzlGfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+        </ul>
+      </li>
+      <li id="super"><b>Save</b>
+        <ul>
+          <li id="sub">An action where the surviving CTs save their weapons after knowing the round is lost to avoid economic downfall.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Smurf</b>
+        <ul>
+          <li id="sub">Where a player uses a account lower ranked than their actual rank to play against lower ranked players. Typicaly unpopular.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Tagged</b>
+        <ul>
+          <li id="sub">Similar to "Lit".</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Tilt</b>
+        <ul>
+          <li id="sub">Where a player is angry about the outcome of the game until it affects performance.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>TK(Team Kill)</b>
+        <ul>
+          <li id="sub">An action in which a player accidentally or intentionally kills a teammate.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Throw</b>
+        <ul>
+          <li id="sub">Similar to "Grief"</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Toggle</b>
+        <ul>
+          <li id="sub">Usually denotes a player has turned on hacks, like the toggle of a switch.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>VAC(Valve Anti Cheat)</b>
+        <ul>
+          <li id="sub">Typically spoken after seeing a player hit a unnatural shot.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Volvo</b>
+        <ul>
+          <li id="sub">Nickname for Valve, the developer of the game.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Walling</b>
+        <ul>
+          <li id="sub">Denotes a player can see through walls with the help of cheating software.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Wall Bang</b>
+        <ul>
+          <li id="sub">Describes bullets going through a penetrateable surface to the other side and killing an enemy.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Whiff</b>
+        <ul>
+          <li id="sub">Denotes a player has missed an easy shot.</li><br>
+        </ul>
+      </li>
+      <li id="super"><b>Yeet</b>
+        <ul>
+          <li id="sub">Spoken <b>BEFORE</b> throwing the HE grenade. Not to be confused by "Kobe".</li>
+        </ul>
+      </li>
+    </ul>
+
+  </div>
+
+  <br><br>
+  <div id="main"><br>
+    <p style="text-align: center;">Those who cannot remember the past are condemned to repeat it. <br> - George Santayana. <br>
+      <a style="font-size: 120%;" href="page3.html">Click here</a>
+      to discover the history of the game.
+    </p>
+  </div>
+
+  <br><br>
+  <div id="footer">
+    <h1>Created by Group 2:</h1>
+    <h2>Liau Kai Ze</h2>
+    <h2>Lai Cheng Yung</h2>
+    <h2>Tan Jing Yan</h2>
+    <h2>Chong Zhi Xuan</h2>
+    <h2>Wafa Sidig Mohamed Sidig</h2>
+  </div>
+
+  <br>
+  <u id="foot"><center>Background Image: A wise shot of the LanXess Arena, Cologne, hosting a tournament called ESL One Cologne 2019, sometimes referred to as "The Cathedral of Counter-Strike".</center></u>
+  <br>
+
+</body>
+</html>
